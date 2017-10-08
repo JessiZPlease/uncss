@@ -50,6 +50,7 @@ function parseUncssrc(filename) {
  */
 function parsePaths(source, stylesheets, options) {
     return stylesheets.map((sheet) => {
+        console.log(sheet);
         let sourceProtocol;
 
         if (sheet.substr(0, 4) === 'http') {
